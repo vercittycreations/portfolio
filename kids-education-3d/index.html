@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Adventure Land - Where Learning is Fun!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="background-elements">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        <div class="floating-island island-1"></div>
+        <div class="floating-island island-2"></div>
+        <div class="star-particle star-1"></div>
+        <div class="star-particle star-2"></div>
+        <div class="star-particle star-3"></div>
+        <div class="star-particle star-4"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="mascot-main">
+                <div class="character-bubble">
+                    <span class="wave-hand">👋</span>
+                </div>
+            </div>
+            <h1 class="hero-title bounce-in">Learning Adventure Land</h1>
+            <p class="hero-tagline">Where Learning is Fun!</p>
+            <button class="btn-primary start-btn" id="startAdventure">🚀 Start Your Adventure!</button>
+        </div>
+    </section>
+
+    <!-- Learning Areas Section -->
+    <section class="learning-areas" id="learningAreas">
+        <h2 class="section-title">Choose Your Adventure!</h2>
+        <div class="subjects-grid">
+            <!-- Math Magic Card -->
+            <div class="subject-card" data-subject="math" style="--card-color: #FFD93D">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="mascot-icon">🐻</div>
+                        <div class="subject-emoji">🔢</div>
+                        <h3>Math Magic</h3>
+                        <p class="mascot-name">with Buddy Bear</p>
+                        <div class="card-shine"></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Math Magic</h3>
+                        <ul class="activities-list">
+                            <li>🎯 Count &amp; Sort</li>
+                            <li>🔷 Shape Builder</li>
+                            <li>🏁 Number Race</li>
+                        </ul>
+                        <button class="btn-start-learning">Let's Learn!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science Lab Card -->
+            <div class="subject-card" data-subject="science" style="--card-color: #FF6B9D">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="mascot-icon">🐉</div>
+                        <div class="subject-emoji">🔬</div>
+                        <h3>Science Lab</h3>
+                        <p class="mascot-name">with Sparky Dragon</p>
+                        <div class="card-shine"></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Science Lab</h3>
+                        <ul class="activities-list">
+                            <li>🎨 Mix Colors</li>
+                            <li>🌤️ Weather Fun</li>
+                            <li>🦁 Animal Friends</li>
+                        </ul>
+                        <button class="btn-start-learning">Let's Explore!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reading Corner Card -->
+            <div class="subject-card" data-subject="reading" style="--card-color: #A78BFA">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="mascot-icon">🐱</div>
+                        <div class="subject-emoji">📚</div>
+                        <h3>Reading Corner</h3>
+                        <p class="mascot-name">with Whiskers Cat</p>
+                        <div class="card-shine"></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Reading Corner</h3>
+                        <ul class="activities-list">
+                            <li>📖 Story Time</li>
+                            <li>🔤 Word Hunt</li>
+                            <li>🗣️ Phonics Play</li>
+                        </ul>
+                        <button class="btn-start-learning">Let's Read!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Art Studio Card -->
+            <div class="subject-card" data-subject="art" style="--card-color: #95E1D3">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="mascot-icon">🦜</div>
+                        <div class="subject-emoji">🎨</div>
+                        <h3>Art Studio</h3>
+                        <p class="mascot-name">with Rainbow Bird</p>
+                        <div class="card-shine"></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Art Studio</h3>
+                        <ul class="activities-list">
+                            <li>✏️ Draw &amp; Color</li>
+                            <li>🌈 Pattern Maker</li>
+                            <li>🎵 Music Time</li>
+                        </ul>
+                        <button class="btn-start-learning">Let's Create!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Zone Section -->
+    <section class="games-zone">
+        <h2 class="section-title">Fun Games Zone! 🎮</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-icon">🎯</div>
+                <h3>Number Blast</h3>
+                <p>Pop balloons with numbers!</p>
+                <button class="btn-play">Play Now</button>
+            </div>
+            <div class="game-card">
+                <div class="game-icon">🎨</div>
+                <h3>Color Match</h3>
+                <p>Mix and match colors!</p>
+                <button class="btn-play">Play Now</button>
+            </div>
+            <div class="game-card">
+                <div class="game-icon">📖</div>
+                <h3>Word Builder</h3>
+                <p>Build fun words together!</p>
+                <button class="btn-play">Play Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Dashboard Section -->
+    <section class="progress-dashboard">
+        <h2 class="section-title">Your Amazing Achievements! 🌟</h2>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <div class="achievement-icon">⭐</div>
+                <h3>Super Star</h3>
+                <p>Complete 10 activities</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" data-progress="70"></div>
+                </div>
+                <span class="progress-text">7 / 10</span>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🚀</div>
+                <h3>Quick Learner</h3>
+                <p>Finish 5 games</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" data-progress="40"></div>
+                </div>
+                <span class="progress-text">2 / 5</span>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🎨</div>
+                <h3>Creative Kid</h3>
+                <p>Create 3 artworks</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" data-progress="33"></div>
+                </div>
+                <span class="progress-text">1 / 3</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Zone Section -->
+    <section class="parent-zone">
+        <div class="parent-content">
+            <h2 class="section-title">Parent Zone 👨‍👩‍👧‍👦</h2>
+            <p class="parent-intro">Track your child's learning journey and explore educational resources.</p>
+            <div class="parent-features">
+                <div class="feature-item">
+                    <span class="feature-icon">📊</span>
+                    <h3>Progress Reports</h3>
+                    <p>See detailed learning analytics</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⚙️</span>
+                    <h3>Settings &amp; Safety</h3>
+                    <p>Customize learning experience</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📚</span>
+                    <h3>Resources</h3>
+                    <p>Tips and learning guides</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

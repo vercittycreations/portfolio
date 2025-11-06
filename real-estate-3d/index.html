@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Villa Paradise - Virtual Tour | Luxury Realty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="nav-brand">Luxury Realty</div>
+            <div class="nav-links">
+                <a href="#tour">Virtual Tour</a>
+                <a href="#details">Details</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D House -->
+    <section class="hero" id="hero">
+        <div class="scene-container">
+            <div class="lighting-overlay"></div>
+            <div class="sunlight-rays"></div>
+            
+            <!-- 3D House Model -->
+            <div class="house-wrapper" id="houseWrapper">
+                <div class="house-model" id="houseModel">
+                    <!-- Exterior -->
+                    <div class="house-section exterior" id="exterior">
+                        <div class="house-front">
+                            <div class="roof"></div>
+                            <div class="wall">
+                                <div class="window large"></div>
+                                <div class="window large"></div>
+                                <div class="door"></div>
+                            </div>
+                            <div class="balcony"></div>
+                        </div>
+                        <div class="house-side">
+                            <div class="roof-side"></div>
+                            <div class="wall-side">
+                                <div class="window"></div>
+                                <div class="window"></div>
+                            </div>
+                        </div>
+                        <div class="landscape">
+                            <div class="garden"></div>
+                            <div class="pool"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Living Room -->
+                    <div class="house-section room living-room" id="living">
+                        <div class="room-walls">
+                            <div class="wall back"></div>
+                            <div class="wall left"></div>
+                            <div class="wall right"></div>
+                            <div class="floor"></div>
+                            <div class="ceiling"></div>
+                        </div>
+                        <div class="room-furniture">
+                            <div class="furniture sofa"></div>
+                            <div class="furniture table"></div>
+                            <div class="furniture fireplace"></div>
+                            <div class="room-window large-window"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Kitchen -->
+                    <div class="house-section room kitchen-room" id="kitchen">
+                        <div class="room-walls">
+                            <div class="wall back"></div>
+                            <div class="wall left"></div>
+                            <div class="wall right"></div>
+                            <div class="floor"></div>
+                            <div class="ceiling"></div>
+                        </div>
+                        <div class="room-furniture">
+                            <div class="furniture island"></div>
+                            <div class="furniture counter"></div>
+                            <div class="furniture appliances"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bedroom -->
+                    <div class="house-section room bedroom-room" id="bedroom">
+                        <div class="room-walls">
+                            <div class="wall back"></div>
+                            <div class="wall left"></div>
+                            <div class="wall right"></div>
+                            <div class="floor"></div>
+                            <div class="ceiling"></div>
+                        </div>
+                        <div class="room-furniture">
+                            <div class="furniture bed"></div>
+                            <div class="furniture closet"></div>
+                            <div class="room-window"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Interactive Hotspots -->
+                    <div class="hotspot" data-room="living" style="top: 45%; left: 40%;">
+                        <div class="hotspot-pulse"></div>
+                        <div class="hotspot-info">
+                            <h4>Living Room</h4>
+                            <p>Premium flooring &amp; smart lighting</p>
+                        </div>
+                    </div>
+                    <div class="hotspot" data-room="kitchen" style="top: 40%; left: 60%;">
+                        <div class="hotspot-pulse"></div>
+                        <div class="hotspot-info">
+                            <h4>Gourmet Kitchen</h4>
+                            <p>Marble countertops &amp; smart appliances</p>
+                        </div>
+                    </div>
+                    <div class="hotspot" data-room="bedroom" style="top: 35%; left: 50%;">
+                        <div class="hotspot-pulse"></div>
+                        <div class="hotspot-info">
+                            <h4>Master Bedroom</h4>
+                            <p>Private balcony &amp; city views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Camera Position Indicator -->
+            <div class="minimap">
+                <div class="minimap-house"></div>
+                <div class="minimap-camera" id="minimapCamera"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Modern Villa Paradise</h1>
+            <p class="hero-subtitle">Beverly Hills, California</p>
+            <div class="hero-price">$4,500,000</div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Property Stats -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Bedrooms</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Bathrooms</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="4500">0</div>
+                    <div class="stat-label">Square Feet</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2023">0</div>
+                    <div class="stat-label">Year Built</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Controls -->
+    <section class="tour-section" id="tour">
+        <div class="container">
+            <h2 class="section-title">Virtual Tour</h2>
+            <p class="section-subtitle">Explore every corner of this magnificent property</p>
+            
+            <div class="room-controls">
+                <button class="room-btn active" data-room="exterior">
+                    <div class="room-icon">🏡</div>
+                    <div class="room-name">Exterior View</div>
+                    <div class="room-desc">Contemporary architecture</div>
+                </button>
+                <button class="room-btn" data-room="living">
+                    <div class="room-icon">🛋️</div>
+                    <div class="room-name">Living Room</div>
+                    <div class="room-desc">Floor-to-ceiling windows</div>
+                </button>
+                <button class="room-btn" data-room="kitchen">
+                    <div class="room-icon">🍳</div>
+                    <div class="room-name">Gourmet Kitchen</div>
+                    <div class="room-desc">Top-of-the-line appliances</div>
+                </button>
+                <button class="room-btn" data-room="bedroom">
+                    <div class="room-icon">🛏️</div>
+                    <div class="room-name">Master Bedroom</div>
+                    <div class="room-desc">Private balcony</div>
+                </button>
+            </div>
+            
+            <div class="camera-controls">
+                <button class="control-btn" id="rotateLeft" title="Rotate Left">↶</button>
+                <button class="control-btn" id="zoomIn" title="Zoom In">+</button>
+                <button class="control-btn" id="zoomOut" title="Zoom Out">−</button>
+                <button class="control-btn" id="rotateRight" title="Rotate Right">↷</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Details -->
+    <section class="details-section" id="details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="detail-card" data-room-detail="exterior">
+                    <h3>Exterior View</h3>
+                    <p>Contemporary architecture with stunning curb appeal</p>
+                    <ul class="feature-list">
+                        <li>Modern facade</li>
+                        <li>Landscaped garden</li>
+                        <li>Pool area</li>
+                    </ul>
+                </div>
+                <div class="detail-card" data-room-detail="living">
+                    <h3>Living Room</h3>
+                    <p>Spacious living area with floor-to-ceiling windows</p>
+                    <ul class="feature-list">
+                        <li>Smart lighting</li>
+                        <li>Fireplace</li>
+                        <li>Premium flooring</li>
+                    </ul>
+                </div>
+                <div class="detail-card" data-room-detail="kitchen">
+                    <h3>Gourmet Kitchen</h3>
+                    <p>Chef's kitchen with top-of-the-line appliances</p>
+                    <ul class="feature-list">
+                        <li>Marble countertops</li>
+                        <li>Smart appliances</li>
+                        <li>Island seating</li>
+                    </ul>
+                </div>
+                <div class="detail-card" data-room-detail="bedroom">
+                    <h3>Master Bedroom</h3>
+                    <p>Luxurious master suite with private balcony</p>
+                    <ul class="feature-list">
+                        <li>Walk-in closet</li>
+                        <li>En-suite bathroom</li>
+                        <li>City views</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="highlights-section">
+                <h3>Property Highlights</h3>
+                <div class="highlights-grid">
+                    <div class="highlight-item">✓ Smart home technology</div>
+                    <div class="highlight-item">✓ Energy efficient design</div>
+                    <div class="highlight-item">✓ Premium finishes throughout</div>
+                    <div class="highlight-item">✓ Minutes from downtown</div>
+                    <div class="highlight-item">✓ Award-winning schools nearby</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Schedule a Viewing</h2>
+                    <p>Get in touch with our agent to arrange a private tour</p>
+                    
+                    <div class="agent-card">
+                        <div class="agent-avatar">SM</div>
+                        <div class="agent-details">
+                            <h4>Sarah Mitchell</h4>
+                            <p>Luxury Real Estate Agent</p>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            <a href="mailto:sarah@luxuryrealty.com">sarah@luxuryrealty.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Viewing Date</label>
+                        <input type="date" class="form-control" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" name="message" rows="4" placeholder="Tell us about your interest in this property..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Schedule Viewing</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Luxury Realty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
